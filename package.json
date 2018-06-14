@@ -8,9 +8,13 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
+    "tailwind": "./node_modules/.bin/tailwind build ./src/assets/css/tailwind/tailwind.src.css -c ./src/assets/css/tailwind/tailwind.js -o ./src/assets/css/tailwind/tailwind.css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "tailwindcss": "^0.5.3"
   }
 }
