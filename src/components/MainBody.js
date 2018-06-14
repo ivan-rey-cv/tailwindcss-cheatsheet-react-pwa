@@ -1,24 +1,19 @@
 import React, { Component } from 'react';
 
-import ClassCard from './ClassCard';
-
-import cheatSheet from '../assets/js/cheatSheet';
+import CardList from './CardList';
 
 export default class MainBody extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			isModalToggledOn: false
+		};
+	}
+
 	render() {
 		return (
 			<section className="flex justify-center mt-8">
-				<div>
-					{cheatSheet.map(v => {
-						return (
-							<ClassCard
-								title={v.title}
-								color={v.color}
-								children={v.children}
-							/>
-						);
-					})}
-				</div>
+				<CardList />
 			</section>
 		);
 	}

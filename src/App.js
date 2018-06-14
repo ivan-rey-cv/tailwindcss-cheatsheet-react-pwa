@@ -7,7 +7,7 @@ import TheSearch from './components/TheSearch';
 export default class App extends Component {
 	render() {
 		return (
-			<main className="bg-grey-light">
+			<main className="bg-grey-light pb-8">
 				<MainHeader />
 				<TheSearch />
 				<MainBody />
