@@ -5,7 +5,7 @@ export default {
 	children: [
 		{
 			title: 'padding + margin',
-			description: ['.{class}{side?}-{size}'],
+			description: ['.{class}{side?}-{size} eg. .pt-4 (padding-top: 1rem)'],
 			table: {
 				dimension: 3,
 				content: {
@@ -32,7 +32,7 @@ export default {
 						'1.5rem': '6',
 						'2rem': '8',
 						'1px': 'px',
-						'auto(margins only)': 'auto'
+						'auto(margin only)': 'auto'
 					}
 				}
 			}

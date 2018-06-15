@@ -2,6 +2,10 @@ body {
 	background-color: #f1f5f8
 }
 
+a {
+	text-decoration: none;
+}
+
 .flex-basis-1200 {
 	flex-basis: 1200px
 }

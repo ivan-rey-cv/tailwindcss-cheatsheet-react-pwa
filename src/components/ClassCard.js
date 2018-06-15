@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default ({ title, color, children, event }) => {
+export default ({ title, color, children }) => {
 	return (
 		<article className={`border-t-4 border-${color} w-64 bg-white shadow-lg`}>
 			<h4
@@ -11,12 +12,18 @@ export default ({ title, color, children, event }) => {
 			<ul className="list-reset">
 				{children.map(val => {
 					return (
-						<li
-							className={`h-8 pl-4 flex items-center cursor-pointer font-semibold text-xs text-${color}-dark border-b border-grey hover:bg-${color}-lighter`}
-							onClick={() => event(val)}
-							key={val.title}
-						>
-							{val.title}
+						<li key={val.title}>
+							<Link
+								className={`list-reset h-8 pl-4 flex items-center cursor-pointer font-semibold text-xs text-${color}-dark border-b border-grey hover:bg-${color}-lighter`}
+								to={{
+									pathname: '/modal',
+									state: {
+										content: val
+									}
+								}}
+							>
+								{val.title}
+							</Link>
 						</li>
 					);
 				})}

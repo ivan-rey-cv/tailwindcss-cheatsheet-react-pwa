@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 
-import MainHeader from './components/MainHeader';
-import MainBody from './components/MainBody';
-import TheSearch from './components/TheSearch';
+import Home from './views/Home';
+import Modal from './views/Modal';
 
 export default class App extends Component {
 	render() {
 		return (
-			<main className="pb-8">
-				<MainHeader />
-				<TheSearch />
-				<MainBody />
-			</main>
+			<BrowserRouter>
+				<React.Fragment>
+					<Route path={'/'} exact component={Home} />
+					<Route path={'/modal'} component={Modal} />
+				</React.Fragment>
+			</BrowserRouter>
 		);
 	}
 }

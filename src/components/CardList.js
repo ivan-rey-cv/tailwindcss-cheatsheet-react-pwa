@@ -4,7 +4,7 @@ import ClassCard from './ClassCard';
 
 import cheatSheet from '../assets/js/cheat-sheet/index';
 
-export default ({ event }) => {
+export default () => {
 	return (
 		<div className="flex-basis-1200 p-4">
 			<ul className="Card-list list-reset">
@@ -15,7 +15,6 @@ export default ({ event }) => {
 								title={v.title}
 								color={v.color}
 								children={v.children}
-								event={event}
 							/>
 						</li>
 					);
