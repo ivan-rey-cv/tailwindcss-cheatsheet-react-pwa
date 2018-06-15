@@ -1,3 +1,14 @@
 body {
 	background-color: #f1f5f8
 }
+
+.Card-list {
+	flex-basis: 1200px
+}
+
+.Card-list > ul {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(auto-fit, 16rem);
+	justify-content: center
+}

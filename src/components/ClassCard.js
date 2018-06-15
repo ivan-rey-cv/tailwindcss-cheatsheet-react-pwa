@@ -4,7 +4,7 @@ export default ({ title, color, children, event }) => {
 	return (
 		<article className={`border-t-4 border-${color} w-64 bg-white shadow-lg`}>
 			<h4
-				className={`py-2 flex justify-center items-center border-b border-grey text-grey-darkest`}
+				className={`py-2 flex justify-center items-center border-b border-grey text-grey-darker font-extrabold tracking-wide`}
 			>
 				{title}
 			</h4>

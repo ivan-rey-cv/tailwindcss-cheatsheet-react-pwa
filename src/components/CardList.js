@@ -6,7 +6,7 @@ import cheatSheet from '../assets/js/cheatSheet';
 
 export default ({ event }) => {
 	return (
-		<div>
+		<div className="Card-list">
 			<ul className="list-reset">
 				{cheatSheet.map(v => {
 					return (

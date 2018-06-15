@@ -1,3 +1,6 @@
+import Layout from './layout';
+import Typography from './typography';
+
 export default [
 	{
 		title: 'Spacing',
@@ -8,13 +11,15 @@ export default [
 			}
 		]
 	},
+	Typography,
 	{
-		title: 'Typography',
-		color: 'purple',
+		title: 'Borders',
+		color: 'orange',
 		children: [
 			{
-				title: 'Text Sizing'
+				title: 'Border Width'
 			}
 		]
-	}
+	},
+	Layout
 ];
