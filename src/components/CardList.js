@@ -2,15 +2,15 @@ import React from 'react';
 
 import ClassCard from './ClassCard';
 
-import cheatSheet from '../assets/js/cheatSheet';
+import cheatSheet from '../assets/js/cheat-sheet/index';
 
 export default ({ event }) => {
 	return (
-		<div className="Card-list">
-			<ul className="list-reset">
+		<div className="flex-basis-1200 p-4">
+			<ul className="Card-list list-reset">
 				{cheatSheet.map(v => {
 					return (
-						<li>
+						<li key={v.title} className={`span-${v.span}`}>
 							<ClassCard
 								title={v.title}
 								color={v.color}

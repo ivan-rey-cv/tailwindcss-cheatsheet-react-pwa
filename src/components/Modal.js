@@ -2,16 +2,16 @@ import React from 'react';
 
 export default ({ title, event }) => {
 	return (
-		<div className="w-screen absolute pin-t bg-grey-light flex justify-center">
-			<section>
+		<div className="fixed min-h-screen w-screen pin-t bg-grey-light flex justify-center z-50">
+			<section className="flex-basis-800">
 				<button
-					className="p-3 bg-grey-darker font-bold text-white"
+					className="py-2 px-4 bg-grey-darker font-bold text-white hover:bg-grey-dark"
 					onClick={event}
 				>
-					&arrl;
+					X
 				</button>
-				<div className="pt-1 px-2 pb-2">
-					<h2>{title}</h2>
+				<div className="mt-2 pl-4 pb-2">
+					<h3>{title}</h3>
 				</div>
 			</section>
 		</div>

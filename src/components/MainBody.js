@@ -32,7 +32,7 @@ export default class MainBody extends Component {
 
 	render() {
 		return (
-			<section className="relative flex justify-center pt-8 w-screen">
+			<section className="relative flex justify-center pt-4">
 				<CardList event={this.toggleModalOn} />
 				{this.state.isModalToggledOn && (
 					<Modal title={this.state.modal.title} event={this.toggleModalOff} />

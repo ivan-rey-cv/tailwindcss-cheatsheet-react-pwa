@@ -2,13 +2,52 @@ body {
 	background-color: #f1f5f8
 }
 
-.Card-list {
+.flex-basis-1200 {
 	flex-basis: 1200px
 }
+.flex-basis-800 {
+	flex-basis: 800px
+}
 
-.Card-list > ul {
+.Card-list {
 	display: grid;
 	grid-gap: 1rem;
+	grid-auto-flow: dense;
 	grid-template-columns: repeat(auto-fit, 16rem);
+	grid-auto-rows: 2rem;
 	justify-content: center
+}
+
+.span-2 {
+	grid-row: span 2
+}
+.span-3 {
+	grid-row: span 3
+}
+.span-4 {
+	grid-row: span 4
+}
+.span-5 {
+	grid-row: span 5
+}
+.span-6 {
+	grid-row: span 6
+}
+.span-7 {
+	grid-row: span 7
+}
+.span-8 {
+	grid-row: span 8
+}
+.span-9 {
+	grid-row: span 9
+}
+.span-10 {
+	grid-row: span 10
+}
+.span-11 {
+	grid-row: span 11
+}
+.span-12 {
+	grid-row: span 12
 }

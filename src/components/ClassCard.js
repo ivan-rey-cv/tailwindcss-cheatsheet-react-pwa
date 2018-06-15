@@ -12,8 +12,9 @@ export default ({ title, color, children, event }) => {
 				{children.map(val => {
 					return (
 						<li
-							className={`h-8 pl-4 flex items-center cursor-pointer font-semibold text-sm text-${color}-dark border-b border-grey hover:bg-${color}-lighter`}
+							className={`h-8 pl-4 flex items-center cursor-pointer font-semibold text-xs text-${color}-dark border-b border-grey hover:bg-${color}-lighter`}
 							onClick={() => event(val)}
+							key={val.title}
 						>
 							{val.title}
 						</li>
