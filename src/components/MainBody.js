@@ -7,35 +7,35 @@ export default class MainBody extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			isModalToggledOn: false,
-			modal: ''
+			isModalShown: false,
+			modalContent: ''
 		};
 	}
 
-	toggleModalOn = payload => {
+	showModal = payload => {
 		this.setState(prevState => {
 			return {
-				isModalToggledOn: !prevState.isModalToggledOn,
-				modal: payload
+				isModalShown: !prevState.isModalShown,
+				modalContent: payload
 			};
 		});
 	};
 
-	toggleModalOff = () => {
+	hideModal = () => {
 		this.setState(prevState => {
 			return {
-				isModalToggledOn: !prevState.isModalToggledOn,
-				modal: ''
+				isModalShown: !prevState.isModalShown,
+				modalContent: ''
 			};
 		});
 	};
 
 	render() {
 		return (
-			<section className="relative flex justify-center pt-4">
-				<CardList event={this.toggleModalOn} />
-				{this.state.isModalToggledOn && (
-					<Modal title={this.state.modal.title} event={this.toggleModalOff} />
+			<section className="relative flex justify-center pt-4 pb-8">
+				<CardList event={this.showModal} />
+				{this.state.isModalShown && (
+					<Modal content={this.state.modalContent} event={this.hideModal} />
 				)}
 			</section>
 		);
