@@ -3,9 +3,11 @@ import React, { Component } from 'react';
 export default class MainHeader extends Component {
 	render() {
 		return (
-			<header className="flex items-center p-2 bg-teal-light shadow-lg">
+			<header className="flex items-center p-2 bg-teal-light sticky pin-t">
 				<h2 className="text-purple-darker">TailWindCSS</h2>
-				<span className="ml-4 font-bold text-grey-darker">CHEAT SHEET</span>
+				<span className="ml-4 font-bold text-grey-darker text-sm">
+					CHEAT SHEET
+				</span>
 			</header>
 		);
 	}

@@ -4,7 +4,7 @@ import ClassCard from './ClassCard';
 
 import cheatSheet from '../assets/js/cheatSheet';
 
-export default () => {
+export default ({ event }) => {
 	return (
 		<div>
 			<ul className="list-reset">
@@ -15,6 +15,7 @@ export default () => {
 								title={v.title}
 								color={v.color}
 								children={v.children}
+								event={event}
 							/>
 						</li>
 					);

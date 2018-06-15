@@ -7,5 +7,14 @@ export default [
 				title: 'Padding + Margin'
 			}
 		]
+	},
+	{
+		title: 'Typography',
+		color: 'purple',
+		children: [
+			{
+				title: 'Text Sizing'
+			}
+		]
 	}
 ];
