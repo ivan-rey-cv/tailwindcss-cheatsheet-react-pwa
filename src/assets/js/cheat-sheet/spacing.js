@@ -5,7 +5,10 @@ export default {
 	children: [
 		{
 			title: 'padding + margin',
-			description: ['.{class}{side?}-{size} eg. .pt-4 (padding-top: 1rem)'],
+			description: [
+				'.{class}{side?} - {size}',
+				' eg.  .pt-4 (padding-top: 1rem)'
+			],
 			table: {
 				dimension: 3,
 				content: {

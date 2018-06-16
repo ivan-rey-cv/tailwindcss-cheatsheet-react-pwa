@@ -1,7 +1,7 @@
 export default {
 	title: 'Typography',
 	color: 'purple',
-	span: 11,
+	span: 12,
 	children: [
 		{
 			title: 'color'
@@ -28,13 +28,16 @@ export default {
 			title: 'list-style'
 		},
 		{
-			title: 'text-transform'
+			title: 'text-align'
 		},
 		{
 			title: 'text-decoration'
 		},
 		{
-			title: 'text-align'
+			title: 'text-sizing'
+		},
+		{
+			title: 'text-transform'
 		},
 		{
 			title: 'vertical-align'

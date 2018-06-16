@@ -6,11 +6,14 @@ a {
 	text-decoration: none;
 }
 
-.flex-basis-1200 {
-	flex-basis: 1200px
+.flex-basis-500 {
+	flex-basis: 500px
 }
 .flex-basis-700 {
 	flex-basis: 700px
+}
+.flex-basis-1200 {
+	flex-basis: 1200px
 }
 
 .Card-list {
@@ -54,4 +57,7 @@ a {
 }
 .span-12 {
 	grid-row: span 12
+}
+.span-13 {
+	grid-row: span 13
 }

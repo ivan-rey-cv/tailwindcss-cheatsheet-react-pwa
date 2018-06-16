@@ -4295,6 +4295,10 @@ button,
   letter-spacing: .05em;
 }
 
+.tracking-wider {
+  letter-spacing: .1em;
+}
+
 .select-none {
   user-select: none;
 }
@@ -8185,6 +8189,10 @@ button,
 
   .sm\:tracking-wide {
     letter-spacing: .05em;
+  }
+
+  .sm\:tracking-wider {
+    letter-spacing: .1em;
   }
 
   .sm\:select-none {
@@ -12080,6 +12088,10 @@ button,
     letter-spacing: .05em;
   }
 
+  .md\:tracking-wider {
+    letter-spacing: .1em;
+  }
+
   .md\:select-none {
     user-select: none;
   }
@@ -15973,6 +15985,10 @@ button,
     letter-spacing: .05em;
   }
 
+  .lg\:tracking-wider {
+    letter-spacing: .1em;
+  }
+
   .lg\:select-none {
     user-select: none;
   }
@@ -19864,6 +19880,10 @@ button,
 
   .xl\:tracking-wide {
     letter-spacing: .05em;
+  }
+
+  .xl\:tracking-wider {
+    letter-spacing: .1em;
   }
 
   .xl\:select-none {
