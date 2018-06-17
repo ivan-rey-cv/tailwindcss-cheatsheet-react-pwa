@@ -61,3 +61,14 @@ a {
 .span-13 {
 	grid-row: span 13
 }
+
+.search-highlight {
+	padding: 0.25rem 0.15rem;
+	background-color: lightsalmon;
+	font-weight: 900;
+	color: rgb(27, 27, 27);
+}
+
+.order-first {
+	order: -1
+}

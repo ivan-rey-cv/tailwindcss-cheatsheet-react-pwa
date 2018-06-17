@@ -9,11 +9,12 @@ export default ({ title, color, children }) => {
 			>
 				{title}
 			</h4>
-			<ul className="list-reset">
+			<ul className="list-reset flex flex-col">
 				{children.map(val => {
 					return (
-						<li key={val.title}>
+						<li key={val.title} className="">
 							<Link
+								id={val.title}
 								className={`list-reset h-8 pl-4 flex items-center cursor-pointer font-semibold text-xs text-${color}-dark border-b border-grey hover:bg-${color}-lighter`}
 								to={{
 									pathname: '/modal',

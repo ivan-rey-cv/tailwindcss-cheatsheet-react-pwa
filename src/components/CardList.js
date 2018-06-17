@@ -10,7 +10,7 @@ export default () => {
 			<ul className="Card-list list-reset">
 				{cheatSheet.map(v => {
 					return (
-						<li key={v.title} className={`span-${v.span}`}>
+						<li key={v.title} className={`span-${v.span}`} id={v.title}>
 							<ClassCard
 								title={v.title}
 								color={v.color}
