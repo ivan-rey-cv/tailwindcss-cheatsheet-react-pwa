@@ -7,10 +7,9 @@ import ModalTable2d from '../components/Modal_2d';
 export default class Modal extends Component {
 	render() {
 		const content = this.props.location.state.content;
-		console.log(content);
 		return (
 			<div className="flex justify-center bg-indigo-lightest min-h-screen">
-				<section className="flex-basis-700 flex-shrink">
+				<section className="flex-basis-700 flex-shrink pb-4">
 					<Link to={'/'}>
 						<button className="py-2 px-4 bg-grey-darker  text-2xl font-black text-white hover:bg-grey-dark">
 							&times;
