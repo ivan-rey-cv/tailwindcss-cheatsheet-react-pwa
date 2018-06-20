@@ -1,7 +1,7 @@
 export default {
 	title: 'Layout',
 	color: 'green',
-	span: 7,
+	span: 5,
 	children: [
 		{
 			title: 'break-points'

@@ -13,18 +13,21 @@ a {
 	flex-basis: 700px
 }
 .flex-basis-1200 {
-	flex-basis: 1200px
+	flex-basis: 1500px
 }
 
 .Card-list {
 	display: grid;
-	grid-gap: 1rem;
+	grid-gap: 2.50rem;
 	grid-auto-flow: dense;
-	grid-template-columns: repeat(auto-fit, 16rem);
-	grid-auto-rows: 2rem;
+	grid-template-columns: repeat(auto-fit, 18rem);
+	grid-auto-rows: 2.50rem;
 	justify-content: center
 }
 
+.span-1 {
+	grid-row: span 1
+}
 .span-2 {
 	grid-row: span 2
 }

@@ -1,7 +1,7 @@
 export default {
 	title: 'Backgrounds',
 	color: 'indigo',
-	span: 4,
+	span: 3,
 	children: [
 		{
 			title: 'background-attachment'

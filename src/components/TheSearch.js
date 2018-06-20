@@ -76,13 +76,14 @@ export default class TheSearch extends Component {
 	render() {
 		return (
 			<div className="self-center p-2 pl-4">
-				<label htmlFor="search" className="relative">
+				<div className="relative w-64">
+					<label htmlFor="search" />
 					<input
 						type="text"
 						id="search"
+						name="search-tailwind-css"
 						placeholder="Search"
 						className="p-2 rounded-sm pl-4 pr-8 text-blue-dark tracking-wide shadow-md w-64"
-						autoFocus={true}
 						onChange={this.onChange}
 						value={this.state.searchValue}
 					/>
@@ -94,7 +95,7 @@ export default class TheSearch extends Component {
 							&times;
 						</span>
 					)}
-				</label>
+				</div>
 			</div>
 		);
 	}
