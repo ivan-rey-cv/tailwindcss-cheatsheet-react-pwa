@@ -7,7 +7,13 @@ export default {
 			title: 'break-points'
 		},
 		{
-			title: 'container'
+			title: 'container',
+			table: {
+				dimension: 3,
+				content: {
+
+				}
+			}
 		},
 		{
 			title: 'display'

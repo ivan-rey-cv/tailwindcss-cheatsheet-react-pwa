@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import ModalTable3d from '../components/Modal_3d';
-import ModalTable2d from '../components/Modal_2d';
+import ModalTable from '../components/ModalTable';
 
 export default class Modal extends Component {
 	render() {
 		const content = this.props.location.state.content;
 		return (
-			<div className="flex justify-center bg-indigo-lightest min-h-screen">
+			<div className="flex justify-center bg-white min-h-screen">
 				<section className="flex-basis-700 flex-shrink pb-4">
 					<Link to={'/'}>
 						<button className="py-2 px-4 bg-grey-darker  text-2xl font-black text-white hover:bg-grey-dark">
@@ -28,12 +27,10 @@ export default class Modal extends Component {
 								))}
 							</span>
 						)}
-						{content.table.dimension === 2 && (
-							<ModalTable2d tableContent={content.table.content} />
-						)}
-						{content.table.dimension === 3 && (
-							<ModalTable3d tableContent={content.table.content} />
-						)}
+						<ModalTable
+							header={content.table.header}
+							tableContent={content.table.content}
+						/>
 					</div>
 				</section>
 			</div>

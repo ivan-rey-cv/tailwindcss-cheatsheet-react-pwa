@@ -9,7 +9,7 @@ export default {
 		{
 			title: 'border-radius',
 			table: {
-				dimension: 2,
+				header: ['class', 'property'],
 				content: [
 					['.rounded-none', 'border-radius: 0;'],
 					['.rounded-sm', 'border-radius: .125rem;'],

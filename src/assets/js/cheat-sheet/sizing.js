@@ -7,6 +7,7 @@ export default {
 			title: 'width',
 			table: {
 				dimension: 2,
+				header: ['class', 'property'],
 				content: [
 					['.w-1', 'width: 0.25rem;'],
 					['.w-2', 'width: 0.5rem;'],

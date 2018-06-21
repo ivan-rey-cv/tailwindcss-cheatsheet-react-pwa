@@ -9,7 +9,7 @@ export default {
 		{
 			title: 'box-shadow',
 			table: {
-				dimension: 2,
+				header: ['class', 'property'],
 				content: [
 					['.shadow', 'box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);'],
 					[

@@ -75,3 +75,7 @@ a {
 .order-first {
 	order: -1
 }
+
+.flex-grow-2 {
+	flex-grow: 2
+}
