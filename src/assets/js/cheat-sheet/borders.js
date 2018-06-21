@@ -177,26 +177,14 @@ export default {
 				'eg. .border-b-4  is border-bottom: 4px'
 			],
 			table: {
-				dimension: 3,
-				content: {
-					class: {
-						'': 'border'
-					},
-					'side(optional)': {
-						'All(default)': ' ',
-						Top: 't',
-						Right: 'r',
-						Left: 'l',
-						Bottom: 'b'
-					},
-					'width(optional)': {
-						'0px': '0',
-						'1px(default)': ' ',
-						'2px': '2',
-						'4px': '4',
-						'8px': '8'
-					}
-				}
+				header: ['class', 'side(optional)', 'width(optional)'],
+				content: [
+					[{ border: '' }, { ' ': 'All - default' }, { '0': '0px' }],
+					['', { t: 'Top' }, { ' ': '1px(default)' }],
+					['', { l: 'Left' }, { '2': '2px' }],
+					['', { b: 'Bottom' }, { '4': '4px' }],
+					['', '', { '8': '8px' }]
+				]
 			}
 		}
 	]

@@ -9,10 +9,8 @@ export default {
 		{
 			title: 'container',
 			table: {
-				dimension: 3,
-				content: {
-
-				}
+				header: [],
+				content: {}
 			}
 		},
 		{

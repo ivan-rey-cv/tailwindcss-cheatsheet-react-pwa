@@ -26,7 +26,7 @@ export default ({ header, tableContent }) => {
 
 	return (
 		<div>
-			<ul className="list-reset">
+			<ul className="list-reset mt-3">
 				<li className="w-full flex h-8 bg-grey-light items-center">
 					{header.map(h => (
 						<span
@@ -38,7 +38,7 @@ export default ({ header, tableContent }) => {
 					))}
 				</li>
 				{tableContent.map(list => (
-					<li className="flex py-3 flex items-center border-b border-grey-light">
+					<li className="flex py-2 flex items-center border-b border-grey-light">
 						{list.map(contentList)}
 					</li>
 				))}
