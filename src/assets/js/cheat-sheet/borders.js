@@ -9,7 +9,7 @@ export default {
 		{
 			title: 'border-radius',
 			table: {
-				header: ['class', 'property'],
+				header: ['Class', 'Properties'],
 				content: [
 					['.rounded-none', 'border-radius: 0;'],
 					['.rounded-sm', 'border-radius: .125rem;'],
@@ -177,9 +177,9 @@ export default {
 				'eg. .border-b-4  is border-bottom: 4px'
 			],
 			table: {
-				header: ['class', 'side(optional)', 'width(optional)'],
+				header: ['Class', 'Side(optional)', 'Width(optional)'],
 				content: [
-					[{ border: '' }, { ' ': 'All - default' }, { '0': '0px' }],
+					['border', { ' ': 'All - default' }, { '0': '0px' }],
 					['', { t: 'Top' }, { ' ': '1px(default)' }],
 					['', { l: 'Left' }, { '2': '2px' }],
 					['', { b: 'Bottom' }, { '4': '4px' }],

@@ -9,7 +9,7 @@ export default {
 		{
 			title: 'background-color',
 			table: {
-				header: ['class', 'property'],
+				header: ['Class', 'Properties'],
 				content: [
 					['.bg-transparent', 'background-color: transparent;'],
 					['.bg-black', 'background-color: #22292f;'],

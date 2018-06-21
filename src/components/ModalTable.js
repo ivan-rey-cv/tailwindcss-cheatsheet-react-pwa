@@ -1,17 +1,17 @@
 import React from 'react';
 
 export default ({ header, tableContent }) => {
-	const contentList = item => {
+	const contentList = (item, i) => {
 		if (Array.isArray(item)) {
 			return (
-				<span className="flex-grow w-1 flex flex-col text-sm text-purple-darker">
-					{item.map(val => <span key={val}>{val}</span>)}
+				<span className="flex-grow w-1 flex flex-col text-sm tracking-wide text-grey-darker">
+					{item.map(val => <code key={val}>{val}</code>)}
 				</span>
 			);
 		} else if (typeof item === 'object') {
 			return Object.entries(item).map(([field, value]) => {
 				return (
-					<span className="flex-grow w-1">
+					<span className="flex-grow w-1" key={field}>
 						<span className="bg-blue-lighter px-2 py-1 font-bold">{field}</span>
 						<code className="italic text-sm pl-1">({value})</code>
 					</span>
@@ -19,7 +19,12 @@ export default ({ header, tableContent }) => {
 			});
 		} else {
 			return (
-				<span className="flex-grow w-1 text-sm text-purple-darker">{item}</span>
+				<code
+					className="flex-grow w-1 text-sm tracking-wide text-grey-darker"
+					key={i}
+				>
+					{item}
+				</code>
 			);
 		}
 	};
@@ -37,8 +42,11 @@ export default ({ header, tableContent }) => {
 						</span>
 					))}
 				</li>
-				{tableContent.map(list => (
-					<li className="flex py-2 flex items-center border-b border-grey-light">
+				{tableContent.map((list, index) => (
+					<li
+						className="flex py-2 flex items-center border-b border-grey-light"
+						key={index}
+					>
 						{list.map(contentList)}
 					</li>
 				))}

@@ -15,7 +15,7 @@ export default class Modal extends Component {
 						</button>
 					</Link>
 					<div className="mt-2 p-2">
-						<h3 className="text-purple-dark text-xl tracking-wider font-extrabold flex justify-center">
+						<h3 className="uppercase text-purple-dark text-xl tracking-wider font-extrabold flex justify-center">
 							{content.title}
 						</h3>
 						{content.description && (

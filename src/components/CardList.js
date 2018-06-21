@@ -2,7 +2,7 @@ import React from 'react';
 
 import ClassCard from './ClassCard';
 
-import cheatSheet from '../assets/js/cheat-sheet/index';
+import cheatSheet from '../assets/js/cheat-sheet/_index';
 
 export default () => {
 	return (
