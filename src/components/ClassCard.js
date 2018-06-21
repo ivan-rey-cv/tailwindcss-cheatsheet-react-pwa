@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 
 export default ({ title, color, children }) => {
 	return (
-		<article className={`border-t-4 border-${color} w-72 bg-white shadow-lg`}>
+		<article
+			className={`border-t-4 border-${color} w-72 bg-grey-light shadow-lg`}
+		>
 			<h3
 				className={`h-10 flex justify-center items-center border-b border-grey text-grey-darker font-extrabold tracking-wide`}
 			>

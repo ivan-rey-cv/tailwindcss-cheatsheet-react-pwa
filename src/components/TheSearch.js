@@ -77,16 +77,19 @@ export default class TheSearch extends Component {
 		return (
 			<div className="self-center p-2 pl-4">
 				<div className="relative w-64">
-					<label htmlFor="search" />
-					<input
-						type="text"
-						id="search"
-						name="search-tailwind-css"
-						placeholder="Search"
-						className="p-2 rounded-sm pl-4 pr-8 text-blue-dark tracking-wide shadow-md w-64"
-						onChange={this.onChange}
-						value={this.state.searchValue}
-					/>
+					<label htmlFor="search">
+						<input
+							type="text"
+							id="search"
+							name="search-tailwind-css"
+							aria-label="search-tailwind-css"
+							aria-labelledby="search-tailwind-css"
+							placeholder="Search"
+							className="p-2 rounded-sm pl-4 pr-8 text-blue-dark tracking-wide shadow-md w-64"
+							onChange={this.onChange}
+							value={this.state.searchValue}
+						/>
+					</label>
 					{this.state.searchValue !== '' && (
 						<span
 							className="absolute pin-t pin-r h-full px-2 rounded-full text-2xl font-black cursor-pointer text-red-dark flex items-center justify-center"
