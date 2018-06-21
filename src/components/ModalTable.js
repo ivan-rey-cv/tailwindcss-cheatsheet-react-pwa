@@ -1,5 +1,4 @@
 import React from 'react';
-import { Object } from 'core-js';
 
 export default ({ header, tableContent }) => {
 	const contentList = item => {
