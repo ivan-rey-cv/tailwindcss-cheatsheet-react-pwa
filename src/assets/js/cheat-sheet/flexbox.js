@@ -1,7 +1,7 @@
 export default {
 	title: 'Flexbox',
-	color: 'yellow',
-	span: 4,
+	color: 'green',
+	span: 6,
 	children: [
 		{
 			title: 'flex'

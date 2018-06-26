@@ -1,7 +1,7 @@
 export default {
 	title: 'Spacing',
 	color: 'blue',
-	span: 2,
+	span: 3,
 	children: [
 		{
 			title: 'padding + margin',

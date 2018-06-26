@@ -1,7 +1,7 @@
 export default {
 	title: 'Sizing',
 	color: 'teal',
-	span: 4,
+	span: 7,
 	children: [
 		{
 			title: 'width',
