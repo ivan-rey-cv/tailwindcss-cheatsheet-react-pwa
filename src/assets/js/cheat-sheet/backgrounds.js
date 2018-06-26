@@ -1,10 +1,18 @@
 export default {
 	title: 'Backgrounds',
 	color: 'indigo',
-	span: 5,
+	span: 6,
 	children: [
 		{
-			title: 'background-attachment'
+			title: 'background-attachment',
+			table: {
+				header: ['Class', 'Properties'],
+				content: [
+					['.bg-fixed', 'background-attachment: fixed;'],
+					['.bg-local', 'background-attachment: local;'],
+					['.bg-scroll', 'background-attachment: scroll;']
+				]
+			}
 		},
 		{
 			title: 'background-color',
@@ -88,10 +96,44 @@ export default {
 			}
 		},
 		{
-			title: 'background-position'
+			title: 'background-position',
+			table: {
+				header: ['Class', 'Properties'],
+				content: [
+					['.bg-bottom', 'background-position: bottom;'],
+					['.bg-center', 'background-position: center;'],
+					['.bg-left', 'background-position: left;'],
+					['.bg-left-bottom', 'background-position: left bottom;'],
+					['.bg-left-top', 'background-position: left top;'],
+					['.bg-right', 'background-position: right;'],
+					['.bg-right-bottom', 'background-position: right bottom;'],
+					['.bg-right-top', 'background-position: right top;'],
+					['.bg-top', 'background-position: top;']
+				]
+			}
 		},
 		{
-			title: 'background-repeat'
+			title: 'background-repeat',
+			table: {
+				header: ['Class', 'Properties'],
+				content: [
+					['.bg-repeat', 'background-repeat: repeat;'],
+					['.bg-no-repeat', 'background-repeat: no-repeat;'],
+					['.bg-repeat-x', 'background-repeat: repeat-x;'],
+					['.bg-repeat-y', 'background-repeat: repeat-y;']
+				]
+			}
+		},
+		{
+			title: 'background-size',
+			table: {
+				header: ['Class', 'Properties'],
+				content: [
+					['.bg-auto', 'background-size: auto;'],
+					['.bg-cover', 'background-size: cover;'],
+					['.bg-contain', 'background-size: contain;']
+				]
+			}
 		}
 	]
 };
