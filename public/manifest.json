@@ -1,6 +1,6 @@
 {
-  "short_name": "TWCSS Cheat Sheet",
-  "name": "TailWindCSS Cheat Sheet in React PWA",
+  "short_name": "TailWindCSS",
+  "name": "TailWindCSS Cheat Sheet",
   "icons": [
     {
       "src": "icons/logo-192.png",

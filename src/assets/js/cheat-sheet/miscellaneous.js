@@ -4,7 +4,11 @@ export default {
 	span: 5,
 	children: [
 		{
-			title: 'appearance'
+			title: 'appearance',
+			table: {
+				header: ['Class', 'Properties'],
+				content: [['.appearance-none', 'appearance: none;']]
+			}
 		},
 		{
 			title: 'box-shadow',
@@ -39,7 +43,21 @@ export default {
 			}
 		},
 		{
-			title: 'svg'
+			title: 'outline',
+			table: {
+				header: ['Class', 'Properties'],
+				content: [['.outline-none', 'outline: 0;']]
+			}
+		},
+		{
+			title: 'svg',
+			table: {
+				header: ['Class', 'Properties'],
+				content: [
+					['.fill-current', 'fill: currentColor;'],
+					['.stroke-current', 'stroke: currentColor;']
+				]
+			}
 		}
 	]
 };
