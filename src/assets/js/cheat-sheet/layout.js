@@ -1,11 +1,8 @@
 export default {
 	title: 'Layout',
 	color: 'teal',
-	span: 8,
+	span: 7,
 	children: [
-		{
-			title: 'break-points'
-		},
 		{
 			title: 'container',
 			table: {
@@ -20,13 +17,60 @@ export default {
 			}
 		},
 		{
-			title: 'display'
+			title: 'display',
+			table: {
+				header: ['Class', 'Properties'],
+				content: [
+					['.block', 'display: block;'],
+					['.inline-block', 'display: inline-block;'],
+					['.inline', 'display: inline;'],
+					['.table', 'display: table;'],
+					['.table-row', 'display: table-row;'],
+					['.table-cell', 'display: table-cell;'],
+					['.hidden', 'display: none;'],
+					['.flex', 'display: flex;'],
+					['.inline-flex', 'display: inline-flex;']
+				]
+			}
 		},
 		{
-			title: 'float'
+			title: 'float',
+			table: {
+				header: ['Class', 'Properties'],
+				content: [
+					['.float-right', 'float: right;'],
+					['.float-left', 'float: left;'],
+					['.float-none', 'float: none;'],
+					[
+						'.clearfix',
+						[
+							'&::after {',
+							'	 content: "";',
+							'	 display: table;',
+							'	 clear: both;',
+							'}'
+						]
+					]
+				]
+			}
 		},
 		{
-			title: 'overflow'
+			title: 'overflow',
+			table: {
+				header: ['Class', 'Properties'],
+				content: [
+					['.overflow-auto', 'overflow: auto;'],
+					['.overflow-hidden', 'overflow: hidden;'],
+					['.overflow-visible', 'overflow: visible;'],
+					['.overflow-scroll', 'overflow: scroll;'],
+					['.overflow-x-auto', 'overflow-x: auto;'],
+					['.overflow-y-auto', 'overflow-y: auto;'],
+					['.overflow-x-scroll', 'overflow-x: scroll;'],
+					['.overflow-y-scroll', 'overflow-y: scroll;'],
+					['.scrolling-touch', '-webkit-overflow-scrolling: touch;'],
+					['.scrolling-auto', '-webkit-overflow-scrolling: auto;']
+				]
+			}
 		},
 		{
 			title: 'position',
@@ -53,10 +97,29 @@ export default {
 			}
 		},
 		{
-			title: 'visibility'
+			title: 'visibility',
+			table: {
+				header: ['Class', 'Properties'],
+				content: [
+					['.visible', 'visibility: visible;'],
+					['.invisible', 'visibility: hidden;']
+				]
+			}
 		},
 		{
-			title: 'z-index'
+			title: 'z-index',
+			table: {
+				header: ['Class', 'Properties'],
+				content: [
+					['.z-0', 'z-index: 0;'],
+					['.z-10', 'z-index: 10;'],
+					['.z-20', 'z-index: 20;'],
+					['.z-30', 'z-index: 30;'],
+					['.z-40', 'z-index: 40;'],
+					['.z-50', 'z-index: 50;'],
+					['.z-auto', 'z-index: auto;']
+				]
+			}
 		}
 	]
 };

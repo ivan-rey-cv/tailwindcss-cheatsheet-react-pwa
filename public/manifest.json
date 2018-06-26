@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "TWCSS Cheat Sheet",
+  "name": "TailWindCSS Cheat Sheet in React PWA",
   "icons": [
     {
       "src": "svg/tailwindcss-logo.svg",
@@ -10,6 +10,6 @@
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#64d5ca",
+  "background_color": "#d5e1ec"
 }

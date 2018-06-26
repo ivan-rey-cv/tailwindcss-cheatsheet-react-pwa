@@ -105,6 +105,23 @@ export default {
 			}
 		},
 		{
+			title: 'font-size',
+			table: {
+				header: ['Class', 'Properties'],
+				content: [
+					['.text-xs', 'font-size: .75rem;'],
+					['.text-sm', 'font-size: .875rem;'],
+					['.text-base', 'font-size: 1rem;'],
+					['.text-lg', 'font-size: 1.125rem;'],
+					['.text-xl', 'font-size: 1.25rem;'],
+					['.text-2xl', 'font-size: 1.5rem;'],
+					['.text-3xl', 'font-size: 1.875rem;'],
+					['.text-4xl', 'font-size: 2.25rem;'],
+					['.text-5xl', 'font-size: 3rem;']
+				]
+			}
+		},
+		{
 			title: 'font-weight',
 			table: {
 				header: ['Class', 'Properties'],
@@ -120,12 +137,6 @@ export default {
 					['.font-black', 'font-weight: 900;']
 				]
 			}
-		},
-		{
-			title: 'font-style'
-		},
-		{
-			title: 'font-smoothing'
 		},
 		{
 			title: 'letter-spacing',
@@ -151,13 +162,14 @@ export default {
 			}
 		},
 		{
-			title: 'list-style'
+			title: 'lists',
+			table: {
+				header: ['Class', 'Properties'],
+				content: [['.list-reset', 'list-style: none; padding: 0;']]
+			}
 		},
 		{
-			title: 'text-align'
-		},
-		{
-			title: 'text-decoration',
+			title: 'style & decoration',
 			table: {
 				header: ['Class', 'Properties'],
 				content: [
@@ -185,33 +197,53 @@ export default {
 			}
 		},
 		{
-			title: 'text-sizing - (font-size)',
+			title: 'text alignment',
 			table: {
 				header: ['Class', 'Properties'],
 				content: [
-					['.text-xs', 'font-size: .75rem;'],
-					['.text-sm', 'font-size: .875rem;'],
-					['.text-base', 'font-size: 1rem;'],
-					['.text-lg', 'font-size: 1.125rem;'],
-					['.text-xl', 'font-size: 1.25rem;'],
-					['.text-2xl', 'font-size: 1.5rem;'],
-					['.text-3xl', 'font-size: 1.875rem;'],
-					['.text-4xl', 'font-size: 2.25rem;'],
-					['.text-5xl', 'font-size: 3rem;']
+					['.text-left', 'text-align: left;'],
+					['.text-center', 'text-align: center;'],
+					['.text-right', 'text-align: right;'],
+					['.text-justify', 'text-align: justify;']
 				]
 			}
 		},
 		{
-			title: 'text-transform'
+			title: 'vertical alignment',
+			table: {
+				header: ['Class', 'Properties'],
+				content: [
+					['.align-baseline', 'vertical-align: baseline;'],
+					['.align-top', 'vertical-align: top;'],
+					['.align-middle', 'vertical-align: middle;'],
+					['.align-bottom', 'vertical-align: bottom;'],
+					['.align-text-top', 'vertical-align: text-top;'],
+					['.align-text-bottom', 'vertical-align: text-bottom;']
+				]
+			}
 		},
 		{
-			title: 'vertical-align'
-		},
-		{
-			title: 'white-space'
-		},
-		{
-			title: '.truncate'
+			title: 'white spacing & wrapping',
+			table: {
+				header: ['Class', 'Properties'],
+				content: [
+					['.whitespace-normal', 'white-space: normal;'],
+					['.whitespace-no-wrap', 'white-space: nowrap;'],
+					['.whitespace-pre', 'white-space: pre;'],
+					['.whitespace-pre-line', 'white-space: pre-line;'],
+					['.whitespace-pre-wrap', 'white-space: pre-wrap;'],
+					['.break-words ', 'word-wrap: break-word;'],
+					['.break-normal', 'word-wrap: normal;'],
+					[
+						'.truncate',
+						[
+							'overflow: hidden;',
+							'text-overflow: ellipsis;',
+							'white-space: nowrap'
+						]
+					]
+				]
+			}
 		}
 	]
 };
