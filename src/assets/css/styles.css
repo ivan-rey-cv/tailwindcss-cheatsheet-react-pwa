@@ -73,9 +73,9 @@ a {
 
 .search-highlight {
 	padding: 0.25rem 0.15rem;
-	background-color: lightsalmon;
+	background-color: palevioletred;
 	font-weight: 900;
-	color: rgb(27, 27, 27);
+	color: rgb(34, 42, 46);
 }
 
 .order-first {

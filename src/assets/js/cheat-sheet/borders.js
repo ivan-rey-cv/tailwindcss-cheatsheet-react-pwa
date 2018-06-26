@@ -266,7 +266,7 @@ export default {
 			table: {
 				header: ['Class', 'Side(optional)', 'Width(optional)'],
 				content: [
-					['border', { ' ': 'All - default' }, { '0': '0px' }],
+					['.border', { ' ': 'All - default' }, { '0': '0px' }],
 					['', { t: 'Top' }, { ' ': '1px(default)' }],
 					['', { l: 'Left' }, { '2': '2px' }],
 					['', { b: 'Bottom' }, { '4': '4px' }],

@@ -6,6 +6,7 @@ import Layout from './cheat-sheet/layout';
 import Miscellaneous from './cheat-sheet/miscellaneous';
 import Sizing from './cheat-sheet/sizing';
 import Spacing from './cheat-sheet/spacing';
+import Tables from './cheat-sheet/tables';
 import Typography from './cheat-sheet/typography';
 
 export default {
@@ -17,5 +18,6 @@ export default {
 	Sizing: Sizing.children.map(v => v.title),
 	Interactivity: Interactivity.children.map(v => v.title),
 	Spacing: Spacing.children.map(v => v.title),
+	Tables: Tables.children.map(v => v.title),
 	Typography: Typography.children.map(v => v.title)
 };

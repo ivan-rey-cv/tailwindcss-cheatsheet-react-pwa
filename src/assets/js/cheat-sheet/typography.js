@@ -1,7 +1,7 @@
 export default {
 	title: 'Typography',
 	color: 'purple',
-	span: 14,
+	span: 11,
 	children: [
 		{
 			title: 'color',

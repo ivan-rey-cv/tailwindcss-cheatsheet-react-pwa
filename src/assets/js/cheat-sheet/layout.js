@@ -1,7 +1,7 @@
 export default {
 	title: 'Layout',
 	color: 'teal',
-	span: 7,
+	span: 8,
 	children: [
 		{
 			title: 'container',

@@ -1,22 +1,31 @@
 export default {
 	title: 'Flexbox',
 	color: 'green',
-	span: 6,
+	span: 9,
 	children: [
 		{
-			title: 'flex'
+			title: 'display'
 		},
 		{
-			title: 'justify-content'
+			title: 'flex-direction'
 		},
 		{
-			title: 'align-content'
+			title: 'flex-wrappingt'
 		},
 		{
 			title: 'align-items'
 		},
 		{
+			title: 'align-content'
+		},
+		{
 			title: 'align-self'
+		},
+		{
+			title: 'justify-content'
+		},
+		{
+			title: 'flex, grow & shrink'
 		}
 	]
 };
