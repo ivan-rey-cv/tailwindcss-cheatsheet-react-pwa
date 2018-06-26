@@ -1,7 +1,7 @@
 export default {
 	title: 'Interactivity',
 	color: 'green',
-	span: 3,
+	span: 5,
 	children: [
 		{
 			title: 'cursor'

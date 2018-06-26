@@ -1,5 +1,5 @@
 body {
-	background-color: #b8c2cc
+	background-color: #d5e1ec
 }
 
 a {
@@ -18,10 +18,10 @@ a {
 
 .Card-list {
 	display: grid;
-	grid-gap: 2.50rem;
+	grid-gap: 1.50rem;
 	grid-auto-flow: dense;
 	grid-template-columns: repeat(auto-fit, 18rem);
-	grid-auto-rows: 2.50rem;
+	grid-auto-rows: 1.50rem;
 	justify-content: center
 }
 
@@ -63,6 +63,12 @@ a {
 }
 .span-13 {
 	grid-row: span 13
+}
+.span-14 {
+	grid-row: span 14
+}
+.span-15 {
+	grid-row: span 15
 }
 
 .search-highlight {

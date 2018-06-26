@@ -1,7 +1,7 @@
 export default {
 	title: 'Borders',
 	color: 'orange',
-	span: 3,
+	span: 5,
 	children: [
 		{
 			title: 'border-color'

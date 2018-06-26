@@ -12,17 +12,16 @@ export default ({ header, tableContent }) => {
 			return Object.entries(item).map(([field, value]) => {
 				return (
 					<span className="flex-grow w-1" key={field}>
-						<span className="bg-blue-lighter px-2 py-1 font-bold">{field}</span>
-						<code className="italic text-sm pl-1">({value})</code>
+						<span className="bg-blue-lighter px-2 py-1 font-bold text-sm">
+							{field}
+						</span>
+						<code className="italic text-xs pl-1">({value})</code>
 					</span>
 				);
 			});
 		} else {
 			return (
-				<code
-					className="flex-grow w-1 text-sm tracking-wide text-grey-darker"
-					key={i}
-				>
+				<code className="flex-grow w-1 text-sm text-grey-darker" key={i}>
 					{item}
 				</code>
 			);

@@ -1,7 +1,7 @@
 export default {
 	title: 'Miscellaneous',
 	color: 'pink',
-	span: 4,
+	span: 5,
 	children: [
 		{
 			title: 'appearance'
